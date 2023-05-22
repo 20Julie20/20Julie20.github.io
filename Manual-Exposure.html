@@ -25,15 +25,23 @@
       color: #fff;
     }
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      grid-gap: 20px;
+    .row {
+        width: 100%;
+        padding: 2%;
+        color: white;
     }
 
-    .gallery img {
-      width: 100%;
-      height: auto;
+    #context,
+    #gallery {
+        width: 46%;
+        display: inline;
+        height: 100px;
+    }
+
+    .row img {
+        width: 46%;
+        height: auto;
+        display: inline;
     }
 
     .back-link {
@@ -62,12 +70,23 @@
     </div>
   </nav>
 
-  <h1 style="color:white; padding-top: 15px;" class="text-center">Portfolio</h1>
+  <h1 style="color:white; padding-top: 15px;" class="text-center">Manual Exposure</h1>
 
-  <div class="gallery">
-    <a href="A-Casual-Portrait"><img src="./images/A_Casual_Portrait.JPG" alt="Portfolio Image 1"><p>A Casual Portrait</p></a>
-    <a href="Manual-Exposure"><img src="./images/Manual_Exposure_2.JPG" alt="Portfolio Image 2"><p>Manual Exposure</p></a>
-    <!-- Add more portfolio images as needed -->
+  <div class="row">
+    <div id="gallery" class="text-center">
+        <img src="./images/Manual_Exposure_1.JPG" alt="Manual_Exposure_1">
+        <img src="./images/Manual_Exposure_2.JPG" alt="Manual_Exposure_2">
+        <img src="./images/Manual_Exposure_3.JPG" alt="Manual_Exposure_3">
+      </div>
+    
+      <div id="context">
+        <p>Xander Bolinger, Senior Computer Science major at Colorado State University. Posing in Fort Collins City Park. Photo taken by Julie Bremser on the 21st of May 2023</p>
+        <p>lens focus length: 5</p>
+        <p>aperture setting: 3.2</p>
+        <p>shutter speed: 1/400 s</p>
+        <p>ISO: 125</p>
+        <p>Date: May 21, 2023</p>
+      </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
