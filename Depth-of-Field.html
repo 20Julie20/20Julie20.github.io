@@ -25,15 +25,23 @@
       color: #fff;
     }
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      grid-gap: 20px;
+    .row {
+        width: 100%;
+        padding: 2%;
+        color: white;
     }
 
-    .gallery img {
-      width: 100%;
-      height: auto;
+    #context,
+    #gallery {
+        width: 46%;
+        display: inline;
+        height: 100px;
+    }
+
+    .row img {
+        width: 46%;
+        height: auto;
+        display: inline;
     }
 
     .back-link {
@@ -62,14 +70,21 @@
     </div>
   </nav>
 
-  <h1 style="color:white; padding-top: 15px;" class="text-center">Portfolio</h1>
+  <h1 style="color:white; padding-top: 15px;" class="text-center">Depth of Field</h1>
 
-  <div class="gallery">
-    <a href="A-Casual-Portrait.html"><img src="./images/A_Casual_Portrait.JPG" alt="Portfolio Image 1"><p>A Casual Portrait</p></a>
-    <a href="Manual-Exposure.html"><img src="./images/Manual_Exposure_2.JPG" alt="Portfolio Image 2"><p>Manual Exposure</p></a>
-    <a href="Depth-of-Field.html"><P>Depth of Field</P></a>
-    <a href="Shutter-Speed.html"><p>Shutter Speed</p></a>
-    <!-- Add more portfolio images as needed -->
+  <div class="row">
+    <div id="gallery" class="text-center">
+        <p>Image coming soon</p>
+    </div>
+    
+      <div id="context">
+        <p>subjext matter info</p>
+        <p>lens focus length: </p>
+        <p>aperture setting: </p>
+        <p>shutter speed: </p>
+        <p>ISO: </p>
+        <p>Date: </p>
+      </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
