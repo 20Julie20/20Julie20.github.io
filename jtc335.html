@@ -38,11 +38,14 @@
             display: flex;
             flex-wrap: wrap;
             margin: -10px;
+            width: 100%;;
         }
         
-        .column {
-            flex: 50%;
+        .column1,
+        .column2 {
+            display: block;
             padding: 10px;
+            width: 50%;
         }
         
         .bio-image {
@@ -51,12 +54,14 @@
         }
         
         .photo-image {
-            max-width: 100%;
+            width: 46%;
             height: auto;
+            display: inline;
         }
         
         .photo-details {
             margin-top: 10px;
+            display: block;
         }
         
         /* Responsive layout - for screens smaller than 600px wide */
@@ -79,12 +84,19 @@
     
     <div class="container">
         <div class="row">
-            <div class="column">
-                <h2>About</h2>
-                <p>Julie Bremser is a Computer Science student with a minor in Information Systems at Colorado State University.</p>
+            <div class="column1">
+                <img class="photo-image" src="./images/A_Casual_Portrait.JPG" alt="Photo 1">
             </div>
-            <div class="column">
-                <img class="bio-image" src="path/to/bio-image.jpg" alt="Bio Image">
+            <div class="column2">
+                <div class="photo-details">
+                    <h3>A Casual Portrait</h3>
+                    <p>Xander Bolinger, Senior Computer Science major at Colorado State University. Posing next to a tree in a nature area around Ram's Village apartments. Photo taken by Julie Bremser on the 21st of May 2023</p>
+                    <p>lens focus length: 3.2 </p>
+                    <p>aperture setting: 4.5</p>
+                    <p>shutter speed: 1/500 s</p>
+                    <p>ISO: 125</p>
+                    <p>Date: May 21, 2023</p>
+                </div>
             </div>
         </div>
     </div>
