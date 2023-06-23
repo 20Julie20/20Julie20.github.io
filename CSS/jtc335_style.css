@@ -29,17 +29,9 @@ nav a {
 }
 
 .container {
+    font-size: medium;
+    color: #99c9b3;
     max-width: 100%;
-    background: #ebffdb;
-}
-
-.container h2 {
-    color: #294257;
-} 
-
-.container p {
-    color: #294257;
-    font-size: large;
 }
 
 .row {
