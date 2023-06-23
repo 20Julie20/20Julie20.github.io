@@ -1,3 +1,7 @@
+header{
+    font-size: large;
+}
+
 body {
     font-family: 'Abril Fatface', cursive;
     font-family: 'Petrona', serif;
@@ -135,7 +139,20 @@ transform: translateX(0%);
 
 /* Responsive layout - for screens smaller than 600px wide */
 @media (max-width: 600px) {
+    header {
+        font-size: 7px;
+    }
+    body {
+        font-size: 7px;
+    }
     .column {
         flex: 100%;
+    }
+    .container p {
+        font-size: 5px;
+
+    }
+    .website-info h2 {
+        font-size: 7px;
     }
 }
