@@ -1,387 +1,524 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="./CSS/jtc335_style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Petrona:wght@400;800&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title>Julie's Photography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #666;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+        
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        
+        .row {
+            display: block;
+            flex-wrap: wrap;
+            margin: -10px;
+            width: 100%;;
+        }
+        
+        .column1 {
+            float: left;
+            width: 80%;
+        }
+
+        .column2 {
+            width: 20%;
+            float: right;
+        }
+
+            /* Clear floats */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .bio-image {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .photo-image {
+            width: 50%;
+            height: auto;
+            display: inline;
+        }
+        
+        .photo-details {
+            margin-top: 10px;
+            display: block;
+        }
+        
+        /* Responsive layout - for screens smaller than 600px wide */
+        @media (max-width: 600px) {
+            .column {
+                flex: 100%;
+            }
+        }
+
+        * {box-sizing: border-box}
+        .mySlides1, .mySlides2 {display: none}
+        img {vertical-align: middle;}
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 500px;
+            position: relative;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a grey background color */
+        .prev:hover, .next:hover {
+            background-color: #f1f1f1;
+            color: black;
+        }
+
+        /* Caption text NOT UED RIGHT NOW*/
+        .text {
+            color: #f2f2f2;
+            font-size: 10px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Julie's Photography</h1>
+    </header>
     
-        <title>JTC335 Portfolio</title>
-    </head>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="jtc335.html">JTC335</a>
+    </nav>
 
+    <!-- <p>
+        <strong>lens focus length: </strong> mm<br>
+        <strong>aperture setting: </strong><br>
+        <strong>shutter speed: </strong>s<br>
+        <strong>ISO: </strong><br>
+        <strong>Date: </strong>June 17, 2023
+    </p> -->
+    
+    <div class="container">
 
-    <body>
-        <header>
-            <h1>Julie's Photography</h1>
-        </header>
-        
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="jtc335.html">JTC335</a>
-        </nav>
-
-        <!-- <p>
-            <strong>lens focus length: </strong> mm<br>
-            <strong>aperture setting: </strong><br>
-            <strong>shutter speed: </strong>s<br>
-            <strong>ISO: </strong><br>
-            <strong>Date: </strong>June 17, 2023
-        </p> -->
-        
-        <div class="container">
-
-            <h2>Module 10: Enviromental Portrait</h2>
-            <div class="row">
-                <div class="column1">
-                    <img class="photo-image" src="images/BremserPortrait.JPG" alt="7.0">
-                </div>
-                <div class="column2">
-                    <div class="photo-details">
-                        <p>Portrait of Julie Bremser on CSU tennis courts on June 17, 2023.</p>
-                        <p><strong>lens focus length: </strong>4 mm<br>
-                            <strong>aperture setting: </strong>f/3<br>
-                            <strong>shutter speed: </strong>1/1250s<br>
-                            <strong>ISO: </strong> 125<br>
-                            <strong>Date: </strong>June 17, 2023
-                        </p>
-                    </div>
-                </div>
+        <h2>Module 10: Enviromental Portrait</h2>
+        <div class="row">
+            <div class="column1">
+                <img class="photo-image" src="images/BremserPortrait.JPG" alt="7.0">
             </div>
-            <h2>Module 9: The Decisive Moment</h2>
-            <div class="row">
-                <div class="column1">
-                    <div class="slideshow-container">
-                        <div class="mySlides1">
-                        <div class="numbertext">1 / 3</div>
-                        <img src="images/BremserDM.JPG" style="width:100%">
-                        </div>
-                    
-                        <div class="mySlides1">
-                        <div class="numbertext">2 / 3</div>
-                        <img src="images/BremserDM1.JPG" style="width:100%">
-                        </div>
-                    
-                        <div class="mySlides1">
-                        <div class="numbertext">3 / 3</div>
-                        <img src="images/BremserDM5.JPG" style="width:100%">
-                        </div>
-                    
-                        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-                    </div>
-                </div>
-                <div class="column2">
-                    <p>Julie Bremser proforming a tennis jump serve on the CSU campus court, on June 17, 2023.</p>
-                    <h3>Image 1</h3>
-                    <p>
-                        <strong>lens focus length: </strong>4 mm<br>
-                        <strong>aperture setting: </strong>f/6<br>
-                        <strong>shutter speed: </strong>1/1000 s<br>
-                        <strong>ISO: </strong>125<br>
+            <div class="column2">
+                <div class="photo-details">
+                    <p>Portrait of Julie Bremser on CSU tennis courts on June 17, 2023.</p>
+                    <p><strong>lens focus length: </strong>4 mm<br>
+                        <strong>aperture setting: </strong>f/3<br>
+                        <strong>shutter speed: </strong>1/1250s<br>
+                        <strong>ISO: </strong> 125<br>
                         <strong>Date: </strong>June 17, 2023
                     </p>
-                    <h3>Image 2</h3>
-                    <p>
-                        <strong>lens focus length: </strong>4 mm<br>
-                        <strong>aperture setting: </strong>f/6<br>
-                        <strong>shutter speed: </strong>1/1000 s<br>
-                        <strong>ISO: </strong>125<br>
-                        <strong>Date: </strong>June 17, 2023
-                    </p>
-                    <h3>Image 3</h3>
-                    <p>
-                        <strong>lens focus length: </strong>4 mm<br>
-                        <strong>aperture setting: </strong>f/6<br>
-                        <strong>shutter speed: </strong>1/800 s<br>
-                        <strong>ISO: </strong>125<br>
-                        <strong>Date: </strong>June 17, 2023
-                    </p>
-                </div>
-            </div>
-            <h2>Extra Credit Module: Spot News</h2>
-            <div class="row">
-                <div class="column1">
-                    <!-- Photo -->
-                </div>
-                <div class="column2">
-                    <div class="photo-details">
-                        <p>Coming Soon!</p>
-                    </div>
-                </div>
-            </div>
-            <h2>Module 8: Professional Photographer Photograph</h2>
-            <div class="row">
-                <div class="column1">
-                    <video width="620" height="390" controls>
-                        <source src="images/Module8_ProfessionalPhotographerProfile.mp4" type="video/mp4">
-            
-                    Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="column2">
-                    <div class="photo-details">
-                        <p>Julie Bremser shares information on photographer <a href="https://www.jaymaisel.com/">Jay Maisel</a>. Maisel is a talented photographer who has won many awards, been on front cover of magazines and has a very unique style.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <h2>Module 7: Extreme Close-up</h2>
-            <div class="row">
-                <div class="column1">
-                    <img class="photo-image" src="images/PothosSideLeaf.JPG" alt="7.1">
-                </div>
-                <div class="column2">
-                    <div class="photo-details">
-                        <p>Photo of a regular pothos plant leaf. In the photographer Julie's home from below. Taken on June 11, 2023.</p>
-                        <p>lens focus length:  33 mm</p>
-                        <p>aperture setting: f/5.4</p>
-                        <p>shutter speed:  1/8 s</p>
-                        <p>ISO: 800</p>
-                        <p>Date: June 11, 2023</p>
-                    </div>
-                </div>
-                <div class="column1">
-                    <img class="photo-image" src="images/PothosBigLeaf.JPG" alt="7.0">
-                </div>
-                <div class="column2">
-                    <div class="photo-details">
-                        <p>Photo of a regular pothos plant leaf. In the photographer Julie's home from below. Taken on June 11, 2023.</p>
-                        <p>lens focus length: 24 mm</p>
-                        <p>aperture setting: f/5</p>
-                        <p>shutter speed: 1/30 s</p>
-                        <p>ISO: 450</p>
-                        <p>Date: June 11, 2023</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-            <h2>Module 6: Time Exposure</h2>
-            <div class="row">
-                <div class="column1">
-                    <img class="photo-image" src="./images/lightLines.JPG" alt="6.0">
-                    <img class="photo-image" src="./images/LightSharp.JPG" alt="6.1">
-                    <img class="photo-image" src="./images/LightHeart.JPG" alt="6.2">
-                </div>
-                <div class="column2">
-                    <div class="photo-details">
-                        <p>Photographer Julie drawing with a flashlight a dark room in her apt on June 7, 2023.</p>
-                        <p>lens focus length: 5 mm</p>
-                        <p>aperture setting: f/6.4</p>
-                        <p>shutter speed: 1/4 s</p>
-                        <p>ISO: 125</p>
-                        <p>Date: June 7, 2023</p>
-                    </div>
-                    <div class="photo-details">
-                        <p>Photographer Julie drawing with a flashlight a dark room in her apt on June 7, 2023.</p>
-                        <p>lens focus length: 5 mm</p>
-                        <p>aperture setting: f/6.4</p>
-                        <p>shutter speed: 1/4 s</p>
-                        <p>ISO: 125</p>
-                        <p>Date: June 7, 2023</p>
-                    </div>
-                    <div class="photo-details">
-                        <p>Photographer Julie drawing with a flashlight a dark room in her apt on June 7, 2023.</p>
-                        <p>lens focus length: 5 mm</p>
-                        <p>aperture setting: f/6.4</p>
-                        <p>shutter speed: 1/4 s</p>
-                        <p>ISO: 125</p>
-                        <p>Date: June 7, 2023</p>
-                    </div>
-                </div>
-            </div>
-            <h2>Module 5: Visual Variety</h2>
-            <div class="row">
-                <div class="column1">
-                    <img class="photo-image" src="./images/Above.JPG" alt="5.0">
-                </div>
-                <div class="column2">
-                    <div class="photo-details">
-                        <h3>Above Shot</h3>
-                        <p>Xander Bolinger coding for a summer class in his home, on June 4, 2023.</p>
-                        <p>lens focus length: 4 mm</p>
-                        <p>aperture setting: f/3</p>
-                        <p>shutter speed: 1/60 s</p>
-                        <p>ISO: 200</p>
-                        <p>Date: June 4, 2023</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="column1">
-                    <img class="photo-image" src="./images/Below.JPG" alt="5.1">
-                </div>
-                <div class="column2">
-                    <div class="photo-details">
-                        <h3>Below Shot</h3>
-                        <p>Xander Bolinger coding for a summer class in his home, on June 4, 2023.</p>
-                        <p>lens focus length: 4 mm</p>
-                        <p>aperture setting: f/3</p>
-                        <p>shutter speed: 1/30 s</p>
-                        <p>ISO: 200</p>
-                        <p>Date: June 4, 2023</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="column1">
-                    <img class="photo-image" src="./images/Close.JPG" alt="5.2">
-                </div>
-                <div class="column2">
-                    <div class="photo-details">
-                        <h3>Close-up Shot</h3>
-                        <p>Xander Bolinger coding for a summer class in his home, on June 4, 2023.</p>
-                        <p>lens focus length: 4 mm</p>
-                        <p>aperture setting: f/3</p>
-                        <p>shutter speed: 1/30 s</p>
-                        <p>ISO: 200</p>
-                        <p>Date: June 4, 2023</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="column1">
-                    <img class="photo-image" src="./images/Mid.JPG" alt="5.3">
-                </div>
-                <div class="column2">
-                    <div class="photo-details">
-                        <h3>Midium Shot</h3>
-                        <p>Xander Bolinger coding for a summer class in his home, on June 4, 2023.</p>
-                        <p>lens focus length: 4 mm</p>
-                        <p>aperture setting: f/3</p>
-                        <p>shutter speed: 1/60 s</p>
-                        <p>ISO: 200</p>
-                        <p>Date: June 4, 2023</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="column1">
-                    <img class="photo-image" src="./images/Wide.JPG" alt="5.4">
-                </div>
-                <div class="column2">
-                    <div class="photo-details">
-                        <h3>Wide Shot</h3>
-                        <p>Xander Bolinger coding for a summer class in his home, on June 4, 2023.</p>
-                        <p>lens focus length: 4 mm</p>
-                        <p>aperture setting: f/3</p>
-                        <p>shutter speed: 1/60 s</p>
-                        <p>ISO: 200</p>
-                        <p>Date: June 4, 2023</p>
-                    </div>
-                </div>
-            </div>
-
-            <h2>Module 4: Creative Shutter Speed</h2>
-            <div class="row">
-                <div class="column1">
-                    <img class="photo-image" src="./images/wingBirdPosing.JPG" alt="3.1">
-                </div>
-                <div class="column2">
-                    <div class="photo-details">
-                        <p>A completely black red-headed heron-type bird, asserting dominance over a perching rock. Located in the middle of a reservoir in Fort Collins City Park, on the morning of May 28, 2023.</p>
-                        <p>
-                            <strong>lens focus length: </strong>152 mm<br>
-                            <strong>aperture setting: </strong>f/6.5<br>
-                            <strong>shutter speed: </strong>1/200 s<br>
-                            <strong>ISO: </strong>400<br>
-                            <strong>Date: </strong>May 28, 2023
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="column1">
-                    <img class="photo-image" src="./images/blurbird.JPG" alt="3.1">
-                </div>
-                <div class="column2">
-                    <div class="photo-details">
-                        <p>A completely black red-headed heron-type bird, asserting dominance over a perching rock. Located in the middle of a reservoir in Fort Collins City Park, on the morning of May 28, 2023.</p>
-                        <p>
-                            <strong>lens focus length: </strong>152 mm<br>
-                            <strong>aperture setting: </strong>f/6.5<br>
-                            <strong>shutter speed: </strong>1/60 s<br>
-                            <strong>ISO: </strong>560<br>
-                            <strong>Date: </strong>May 28, 2023
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <h2>Module 3: Depth of Field</h2>
-            <div class="row">
-                <div class="column1">
-                    <img class="photo-image" src="./images/babyTreeBranch.JPG" alt="3.1">
-                </div>
-                <div class="column2">
-                    <div class="photo-details">
-                        <p>A new tree branch growing out of a old oak tree in Fort Collins City Park. The morning of May 28, 2023.</p>
-                        <p>
-                            <strong>lens focus length: </strong>36 mm<br>
-                            <strong>aperture setting: </strong>5.4<br>
-                            <strong>shutter speed: </strong>1/50 s<br>
-                            <strong>ISO: </strong>125<br>
-                            <strong>Date: </strong>May 28, 2023
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="column1">
-                        <img class="photo-image" src="./images/treeSide.JPG" alt="3.2">
-                    </div>
-                    <div class="column2">
-                        <div class="photo-details">
-                            <p>An old oak tree in Fort Collins City Park. The morning of May 28, 2023.</p>
-                            <p>
-                                <strong>lens focus length: </strong>4 mm<br>
-                                <strong>aperture setting: </strong>f/3<br>
-                                <strong>shutter speed: </strong>1/640 s<br>
-                                <strong>ISO: </strong>125<br>
-                                <strong>Date: </strong>May 28, 2023
-                            </p>
-                        </div>
-                    </div>
-            </div>
-            <h2>Module 2: Manual Exposure</h2>
-            <div class="row">
-                <div class="column1">
-                    <img class="photo-image" src="./images/Manual_Exposure_1.JPG" alt="2.1">
-                    <img class="photo-image" src="./images/Manual_Exposure_2.JPG" alt="2.2">
-                    <img class="photo-image" src="./images/Manual_Exposure_3.JPG" alt="2.3">
-                </div>
-                <div class="column2">
-                    <div class="photo-details">
-                        <p>Xander Bolinger, Senior Computer Science major at Colorado State University. Posing in Fort Collins City Park. Photo taken by Julie Bremser on the 21st of May 2023</p>
-                        <p>
-                            <strong>lens focus length: </strong>5 mm<br>
-                            <strong>aperture setting: </strong>3.2<br>
-                            <strong>shutter speed: </strong>1/400 s<br>
-                            <strong>ISO: </strong>125<br>
-                            <strong>Date: </strong>May 21, 2023
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <h2>Module 1: A Casual Portrait</h2>
-            <div class="row">
-                <div class="column1">
-                    <img class="photo-image" src="./images/A_Casual_Portrait.JPG" alt="1">
-                </div>
-                <div class="column2">
-                    <div class="photo-details">
-                        <p>Xander Bolinger, Senior Computer Science major at Colorado State University. Posing next to a tree in a nature area around Ram's Village apartments. Photo taken by Julie Bremser on the 21st of May 2023</p>
-                        <p>
-                            <strong>lens focus length: </strong>3.2 mm<br>
-                            <strong>aperture setting: </strong>4.5<br>
-                            <strong>shutter speed: </strong>1/500 s<br>
-                            <strong>ISO: </strong>125<br>
-                            <strong>Date: </strong>May 21, 2023
-                        </p>
-                    </div>
                 </div>
             </div>
         </div>
-    </body>
+        <h2>Module 9: The Decisive Moment</h2>
+        <div class="row">
+            <div class="column1">
+                <div class="slideshow-container">
+                    <div class="mySlides1">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="images/BremserDM.JPG" style="width:100%">
+                    </div>
+                  
+                    <div class="mySlides1">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="images/BremserDM1.JPG" style="width:100%">
+                    </div>
+                  
+                    <div class="mySlides1">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="images/BremserDM5.JPG" style="width:100%">
+                    </div>
+                  
+                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                  </div>
+            </div>
+            <div class="column2">
+                <p>Julie Bremser proforming a tennis jump serve on the CSU campus court, on June 17, 2023.</p>
+                <h3>Image 1</h3>
+                <p>
+                    <strong>lens focus length: </strong>4 mm<br>
+                    <strong>aperture setting: </strong>f/6<br>
+                    <strong>shutter speed: </strong>1/1000 s<br>
+                    <strong>ISO: </strong>125<br>
+                    <strong>Date: </strong>June 17, 2023
+                </p>
+                <h3>Image 2</h3>
+                <p>
+                    <strong>lens focus length: </strong>4 mm<br>
+                    <strong>aperture setting: </strong>f/6<br>
+                    <strong>shutter speed: </strong>1/1000 s<br>
+                    <strong>ISO: </strong>125<br>
+                    <strong>Date: </strong>June 17, 2023
+                </p>
+                <h3>Image 3</h3>
+                <p>
+                    <strong>lens focus length: </strong>4 mm<br>
+                    <strong>aperture setting: </strong>f/6<br>
+                    <strong>shutter speed: </strong>1/800 s<br>
+                    <strong>ISO: </strong>125<br>
+                    <strong>Date: </strong>June 17, 2023
+                </p>
+            </div>
+        </div>
+        <h2>Extra Credit Module: Spot News</h2>
+        <div class="row">
+            <div class="column1">
+                <!-- Photo -->
+            </div>
+            <div class="column2">
+                <div class="photo-details">
+                    <p>Coming Soon!</p>
+                </div>
+            </div>
+        </div>
+        <h2>Module 8: Professional Photographer Photograph</h2>
+        <div class="row">
+            <div class="column1">
+                <video width="620" height="390" controls>
+                    <source src="images/Module8_ProfessionalPhotographerProfile.mp4" type="video/mp4">
+        
+                  Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="column2">
+                <div class="photo-details">
+                    <p>Julie Bremser shares information on photographer <a href="https://www.jaymaisel.com/">Jay Maisel</a>. Maisel is a talented photographer who has won many awards, been on front cover of magazines and has a very unique style.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h2>Module 7: Extreme Close-up</h2>
+        <div class="row">
+            <div class="column1">
+                <img class="photo-image" src="images/PothosSideLeaf.JPG" alt="7.1">
+            </div>
+            <div class="column2">
+                <div class="photo-details">
+                    <p>Photo of a regular pothos plant leaf. In the photographer Julie's home from below. Taken on June 11, 2023.</p>
+                    <p>lens focus length:  33 mm</p>
+                    <p>aperture setting: f/5.4</p>
+                    <p>shutter speed:  1/8 s</p>
+                    <p>ISO: 800</p>
+                    <p>Date: June 11, 2023</p>
+                </div>
+            </div>
+            <div class="column1">
+                <img class="photo-image" src="images/PothosBigLeaf.JPG" alt="7.0">
+            </div>
+            <div class="column2">
+                <div class="photo-details">
+                    <p>Photo of a regular pothos plant leaf. In the photographer Julie's home from below. Taken on June 11, 2023.</p>
+                    <p>lens focus length: 24 mm</p>
+                    <p>aperture setting: f/5</p>
+                    <p>shutter speed: 1/30 s</p>
+                    <p>ISO: 450</p>
+                    <p>Date: June 11, 2023</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        <h2>Module 6: Time Exposure</h2>
+        <div class="row">
+            <div class="column1">
+                <img class="photo-image" src="./images/lightLines.JPG" alt="6.0">
+                <img class="photo-image" src="./images/LightSharp.JPG" alt="6.1">
+                <img class="photo-image" src="./images/LightHeart.JPG" alt="6.2">
+            </div>
+            <div class="column2">
+                <div class="photo-details">
+                    <p>Photographer Julie drawing with a flashlight a dark room in her apt on June 7, 2023.</p>
+                    <p>lens focus length: 5 mm</p>
+                    <p>aperture setting: f/6.4</p>
+                    <p>shutter speed: 1/4 s</p>
+                    <p>ISO: 125</p>
+                    <p>Date: June 7, 2023</p>
+                </div>
+                <div class="photo-details">
+                    <p>Photographer Julie drawing with a flashlight a dark room in her apt on June 7, 2023.</p>
+                    <p>lens focus length: 5 mm</p>
+                    <p>aperture setting: f/6.4</p>
+                    <p>shutter speed: 1/4 s</p>
+                    <p>ISO: 125</p>
+                    <p>Date: June 7, 2023</p>
+                </div>
+                <div class="photo-details">
+                    <p>Photographer Julie drawing with a flashlight a dark room in her apt on June 7, 2023.</p>
+                    <p>lens focus length: 5 mm</p>
+                    <p>aperture setting: f/6.4</p>
+                    <p>shutter speed: 1/4 s</p>
+                    <p>ISO: 125</p>
+                    <p>Date: June 7, 2023</p>
+                </div>
+            </div>
+        </div>
+        <h2>Module 5: Visual Variety</h2>
+        <div class="row">
+            <div class="column1">
+                <img class="photo-image" src="./images/Above.JPG" alt="5.0">
+            </div>
+            <div class="column2">
+                <div class="photo-details">
+                    <h3>Above Shot</h3>
+                    <p>Xander Bolinger coding for a summer class in his home, on June 4, 2023.</p>
+                    <p>lens focus length: 4 mm</p>
+                    <p>aperture setting: f/3</p>
+                    <p>shutter speed: 1/60 s</p>
+                    <p>ISO: 200</p>
+                    <p>Date: June 4, 2023</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column1">
+                <img class="photo-image" src="./images/Below.JPG" alt="5.1">
+            </div>
+            <div class="column2">
+                <div class="photo-details">
+                    <h3>Below Shot</h3>
+                    <p>Xander Bolinger coding for a summer class in his home, on June 4, 2023.</p>
+                    <p>lens focus length: 4 mm</p>
+                    <p>aperture setting: f/3</p>
+                    <p>shutter speed: 1/30 s</p>
+                    <p>ISO: 200</p>
+                    <p>Date: June 4, 2023</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column1">
+                <img class="photo-image" src="./images/Close.JPG" alt="5.2">
+            </div>
+            <div class="column2">
+                <div class="photo-details">
+                    <h3>Close-up Shot</h3>
+                    <p>Xander Bolinger coding for a summer class in his home, on June 4, 2023.</p>
+                    <p>lens focus length: 4 mm</p>
+                    <p>aperture setting: f/3</p>
+                    <p>shutter speed: 1/30 s</p>
+                    <p>ISO: 200</p>
+                    <p>Date: June 4, 2023</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column1">
+                <img class="photo-image" src="./images/Mid.JPG" alt="5.3">
+            </div>
+            <div class="column2">
+                <div class="photo-details">
+                    <h3>Midium Shot</h3>
+                    <p>Xander Bolinger coding for a summer class in his home, on June 4, 2023.</p>
+                    <p>lens focus length: 4 mm</p>
+                    <p>aperture setting: f/3</p>
+                    <p>shutter speed: 1/60 s</p>
+                    <p>ISO: 200</p>
+                    <p>Date: June 4, 2023</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column1">
+                <img class="photo-image" src="./images/Wide.JPG" alt="5.4">
+            </div>
+            <div class="column2">
+                <div class="photo-details">
+                    <h3>Wide Shot</h3>
+                    <p>Xander Bolinger coding for a summer class in his home, on June 4, 2023.</p>
+                    <p>lens focus length: 4 mm</p>
+                    <p>aperture setting: f/3</p>
+                    <p>shutter speed: 1/60 s</p>
+                    <p>ISO: 200</p>
+                    <p>Date: June 4, 2023</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Module 4: Creative Shutter Speed</h2>
+        <div class="row">
+            <div class="column1">
+                <img class="photo-image" src="./images/wingBirdPosing.JPG" alt="3.1">
+            </div>
+            <div class="column2">
+                <div class="photo-details">
+                    <p>A completely black red-headed heron-type bird, asserting dominance over a perching rock. Located in the middle of a reservoir in Fort Collins City Park, on the morning of May 28, 2023.</p>
+                    <p>lens focus length: 152mm</p>
+                    <p>aperture setting: f/6.5</p>
+                    <p>shutter speed: 1/200s</p>
+                    <p>ISO: 400</p>
+                    <p>Date: May 28, 2023</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column1">
+                <img class="photo-image" src="./images/blurbird.JPG" alt="3.1">
+            </div>
+            <div class="column2">
+                <div class="photo-details">
+                    <p>A completely black red-headed heron-type bird, asserting dominance over a perching rock. Located in the middle of a reservoir in Fort Collins City Park, on the morning of May 28, 2023.</p>
+                    <p>lens focus length: 152mm</p>
+                    <p>aperture setting: f/6.5</p>
+                    <p>shutter speed: 1/60s</p>
+                    <p>ISO: 560</p>
+                    <p>Date: May 28, 2023</p>
+                </div>
+            </div>
+        </div>
+        <h2>Module 3: Depth of Field</h2>
+        <div class="row">
+            <div class="column1">
+                <img class="photo-image" src="./images/babyTreeBranch.JPG" alt="3.1">
+            </div>
+            <div class="column2">
+                <div class="photo-details">
+                    <p>A new tree branch growing out of a old oak tree in Fort Collins City Park. The morning of May 28, 2023.</p>
+                    <p>lens focus length: 36mm</p>
+                    <p>aperture setting: 5.4</p>
+                    <p>shutter speed: 1/50s </p>
+                    <p>ISO: 125</p>
+                    <p>Date: May 28, 2023</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column1">
+                    <img class="photo-image" src="./images/treeSide.JPG" alt="3.2">
+                </div>
+                <div class="column2">
+                    <div class="photo-details">
+                        <p>An old oak tree in Fort Collins City Park. The morning of May 28, 2023.</p>
+                        <p>lens focus length: 4 mm</p>
+                        <p>aperture setting: f/3</p>
+                        <p>shutter speed: 1/640s</p>
+                        <p>ISO: 125</p>
+                        <p>Date: May 28, 2023</p>
+                    </div>
+                </div>
+        </div>
+        <h2>Module 2: Manual Exposure</h2>
+        <div class="row">
+            <div class="column1">
+                <img class="photo-image" src="./images/Manual_Exposure_1.JPG" alt="2.1">
+                <img class="photo-image" src="./images/Manual_Exposure_2.JPG" alt="2.2">
+                <img class="photo-image" src="./images/Manual_Exposure_3.JPG" alt="2.3">
+            </div>
+            <div class="column2">
+                <div class="photo-details">
+                    <p>Xander Bolinger, Senior Computer Science major at Colorado State University. Posing in Fort Collins City Park. Photo taken by Julie Bremser on the 21st of May 2023</p>
+                    <p>lens focus length: 5</p>
+                    <p>aperture setting: 3.2</p>
+                    <p>shutter speed: 1/400 s</p>
+                    <p>ISO: 125</p>
+                    <p>Date: May 21, 2023</p>
+                </div>
+            </div>
+        </div>
+        <h2>Module 1: A Casual Portrait</h2>
+        <div class="row">
+            <div class="column1">
+                <img class="photo-image" src="./images/A_Casual_Portrait.JPG" alt="1">
+            </div>
+            <div class="column2">
+                <div class="photo-details">
+                    <p>Xander Bolinger, Senior Computer Science major at Colorado State University. Posing next to a tree in a nature area around Ram's Village apartments. Photo taken by Julie Bremser on the 21st of May 2023</p>
+                    <p>lens focus length: 3.2 </p>
+                    <p>aperture setting: 4.5</p>
+                    <p>shutter speed: 1/500 s</p>
+                    <p>ISO: 125</p>
+                    <p>Date: May 21, 2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = [1,1];
+        let slideId = ["mySlides1", "mySlides2"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+        
+        function plusSlides(n, no) {
+          showSlides(slideIndex[no] += n, no);
+        }
+        
+        function showSlides(n, no) {
+          let i;
+          let x = document.getElementsByClassName(slideId[no]);
+          if (n > x.length) {slideIndex[no] = 1}    
+          if (n < 1) {slideIndex[no] = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex[no]-1].style.display = "block";  
+        }
+        </script>
+    
+</body>
 </html>
