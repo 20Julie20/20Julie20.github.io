@@ -1,0 +1,155 @@
+header {
+    background-color: #294257;
+    color: #99c9b3;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    font-size: large;
+}
+
+body {
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Petrona', serif;
+    margin: 0;
+    padding: 0;
+    /* background: #ebffdb; */
+    background-color: #191b1a;
+}
+
+nav {
+    background-color: #579c9a;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #ebffdb;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.container {
+    max-width: 100%;
+    background: #ebffdb;
+}
+
+.container h2 {
+    color: #294257;
+} 
+
+.container p {
+    color: #294257;
+    font-size: large;
+}
+
+.about {
+    max-width: 60%;
+    margin: auto;
+    padding: 2%;
+}
+
+.website-info {
+    max-width: 100%;
+    padding: 2%;
+    background-color: #191b1a;
+}
+
+.website-info h2,
+.website-info p {
+    color: #99c9b3;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.column {
+    flex: 50%;
+    padding: 10px;
+}
+
+.photo-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.photo-details {
+    margin-top: 10px;
+}
+
+/*Starting here*/
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    color: #99c9b3;
+    text-align: center;
+}
+
+p {
+    color: #99c9b3;
+}
+
+.site-wrap {
+    max-width: 700px;
+    margin: 100px auto;
+    background:white;
+    padding:40px;
+    text-align: justify;
+}
+
+.align-left {
+    float:left;
+    margin-right:20px;
+    transform: translateX(-110%);
+}
+
+.align-right {
+    float:right;
+    margin-left:20px;
+    transform: translateX(110%);
+}
+
+.slide-in {
+opacity:0;
+transition:1s;
+}
+
+.active {
+opacity:1;
+ transition: transform .5s;
+-webkit-transition: transform .5s;
+transform: translateX(0%);
+
+}
+
+
+/* Responsive layout - for screens smaller than 600px wide */
+@media (max-width: 600px) {
+    header {
+        font-size: 7px;
+    }
+    body {
+        font-size: 7px;
+    }
+    .column {
+        flex: 100%;
+    }
+    .container p {
+        font-size: 5px;
+
+    }
+    .website-info h2 {
+        font-size: 7px;
+    }
+}
