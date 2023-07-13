@@ -133,6 +133,10 @@ transform: translateX(0%);
 
 }
 
+footer {
+    text-align: center;
+}
+
 
 /* Responsive layout - for screens smaller than 600px wide */
 @media (max-width: 600px) {
